@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .maClasse, .uneAutreClasse, .encoreUneAutreClasse {
+  height : 50px;
+}
+
+@media screen {
+  .noScreen {
+    display : none !important;
+  }
+}
+@media print {
+  .maClasse, .uneAutreClasse, .encoreUneAutreClasse {
+  height : 5cm;
+}
+  .noPrint {
+    display : none !important;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="maClasse">
+        Div écran et print
+    </div>
+    <div class="uneAutreClasse noPrint">
+        Div écran et pas d'impression</div>
+    <div class="encoreUneAutreClasse noScreen"> Div pas écran mais impression</div>
+
+</body>
+</html>
